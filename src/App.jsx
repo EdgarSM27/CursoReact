@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <NavBar/>
-    <ItemListContainer greeting = "Tutor de CoderHouse"/>
+    <ItemListContainer/>
     <ItemCount stock= "5"/>
     
     </>

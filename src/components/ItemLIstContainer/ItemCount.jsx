@@ -21,12 +21,12 @@ const ItemCount = (props) => {
 
    <h3>{clickCount}</h3>
     <div
-      class="btn-group btn-group-sm"
+      className="btn-group btn-group-sm"
       role="group"
       aria-label="Small button group"
     >
-      <button onClick={onRemove} type="button" class="btn btn-outline-dark">-</button>
-      <button onClick={onAdd} type="button" class="btn btn-outline-dark">+</button>
+      <button onClick={onRemove} type="button" className="btn btn-outline-dark">-</button>
+      <button onClick={onAdd} type="button" className="btn btn-outline-dark">+</button>
     </div>
     </>
   );

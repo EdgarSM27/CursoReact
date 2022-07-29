@@ -1,17 +1,12 @@
-import React from 'react'
+import React, { useEffect, useState } from "react";
+import ItemList from "./ItemList";
 
 const ItemListContainer = (props) => {
   return (
-    <div>
-
-
-        <h2>Bienvenido {props.greeting}</h2>
-        <p> * Catalogo *</p>
-
-
-
+    <div className="bg-gray-400">
+      <ItemList />
     </div>
-  )
-}
+  );
+};
 
-export default ItemListContainer
+export default ItemListContainer;
