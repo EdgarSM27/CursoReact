@@ -2,32 +2,38 @@ import React, { useState } from "react";
 
 const ItemCount = (props) => {
   const [clickCount, SetClickCount] = useState(1);
- 
+
   const onAdd = () => {
-    if (clickCount < props.stock) 
-    {
-        SetClickCount(clickCount + 1);
+    if (clickCount < props.stock) {
+      SetClickCount(clickCount + 1);
     }
   };
 
-  const onRemove =() => {
-    if (clickCount >1){
-        SetClickCount(clickCount - 1)
+  const onRemove = () => {
+    if (clickCount > 1) {
+      SetClickCount(clickCount - 1);
     }
-  }
+  };
 
   return (
-<>
-
-   <h3>{clickCount}</h3>
-    <div
-      className="btn-group btn-group-sm"
-      role="group"
-      aria-label="Small button group"
-    >
-      <button onClick={onRemove} type="button" className="btn btn-outline-dark">-</button>
-      <button onClick={onAdd} type="button" className="btn btn-outline-dark">+</button>
-    </div>
+    <>
+      <h3>{clickCount}</h3>
+      <div
+        className="btn-group btn-group-sm"
+        role="group"
+        aria-label="Small button group"
+      >
+        <button
+          onClick={onRemove}
+          type="button"
+          className="btn btn-outline-dark"
+        >
+          -
+        </button>
+        <button onClick={onAdd} type="button" className="btn btn-outline-dark">
+          +
+        </button>
+      </div>
     </>
   );
 };

@@ -29,7 +29,7 @@ const ItemListContainer = (props) => {
     },
   ];
   return (
-    <div className="bg-gray-400">
+    <div className="bg-$gray-100 container">
       <ItemList productos={productos} />
     </div>
   );
