@@ -13,6 +13,7 @@ const ItemList = (props) => {
           talla={item.talla}
           color={item.Color}
           imagen={item.imagen}
+          marca={item.marca}
         />
       ))}
     </div>

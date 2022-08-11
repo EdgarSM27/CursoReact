@@ -25,10 +25,8 @@ const navBar = () => {
             <ul className="navbar-nav">
               <li className="nav-item">
                 <a
-                  className="nav-link active"
-                  aria-current="page"
-                  href="/categoria/deportivo"
-                >
+                  className="nav-link"
+                  href="/categoria/deportivo">
                   Deportivo
                 </a>
               </li>

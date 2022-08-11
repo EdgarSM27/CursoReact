@@ -1,17 +1,19 @@
 import React from "react";
 import ItemCount from "../ItemLIstContainer/ItemCount";
 
-const ItemDetail = (props) => {
+const ItemDetail = (producto) => {
   return (
     <div className="col-4  card p-4 m-4 h-50">
-      <img className="img-fluid" src={props.img} alt="" />
-      <p>{props.marca} </p>
-      <p>{props.producto} </p>
-      <p>Descripción del producto: {props.descripcion} </p>
-      <p>stock: {props.stock} </p>
-      <p>Precio: {props.precio} </p>
+      <img className="img-fluid" src={producto.img} alt="" />
+      <p>{producto.marca} </p>
+      <p>{producto.modelo} </p>
+      <p>Descripción del producto: {producto.descripcion} </p>
+      <p>Talla: {producto.talla} </p>
+      <p>Color: {producto.Color} </p>
+      <p>stock: {producto.stock} </p>
+      <p>Precio: {producto.precio} </p>
 
-      <ItemCount stock={props.stock} />
+      <ItemCount stock={producto.stock} />
     </div>
   );
 };
