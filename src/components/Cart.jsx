@@ -35,7 +35,9 @@ const Cart = () => {
             )}
                 
             <div className="pt-8 flex">
-                    <button className="btn-primary">Finalizar compra</button>
+            <Link to={`/Checkout`}>
+            <button className="btn-primary">Finalizar compra</button>
+            </Link>
                 <button onClick={ clearCart } className="btn-secondary ml-2">Limpiar Carrito</button>
             </div>
 
